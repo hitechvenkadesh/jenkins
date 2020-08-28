@@ -1,1 +1,1 @@
-Print("Welcome to Hi-Tech Institution")
+print("Welcome to Hi-Tech Institution")
