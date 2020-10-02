@@ -12,7 +12,7 @@ listec2 = boto3.client('ec2',region_name=region,
 output = listec2.describe_instances()
 for printid in output['Reservations']:
     for printid2 in printid['Instances']:
-	print((printid2['InstanceId']),
-              (printid2['InstanceType']),
-              (printid2['LaunchTime']),
-              (printid2['State']['Name']))
+	print(printid2['InstanceId'],
+              printid2['InstanceType'],
+              printid2['LaunchTime'],
+              printid2['State']['Name'])
