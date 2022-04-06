@@ -17,6 +17,5 @@ for printins in listec2['Reservations']:
 			      printid['InstanceId'],
 			      printid['InstanceType'],
 			      printid['LaunchTime'],
-			      printid['VpcId'],
 			      printid['State']['Name'],
 			      printtag['Value'])
