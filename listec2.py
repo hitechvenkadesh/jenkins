@@ -1,8 +1,9 @@
 import boto3
+import sys
 
-region = str(input("Type the Region Code"))
-access_key = str(input("Type your_aws_access_key_id"))
-secret_key = str(input("Type your_aws_secret_access_key"))
+region = sys.argv[1]
+access_key = sys.argv[2]
+secret_key = sys.argv[3]
 
 ec2 = boto3.client('ec2',
 	region_name = region,
