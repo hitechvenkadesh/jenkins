@@ -11,6 +11,6 @@ ec2 = boto3.client('ec2',region_name=region,
 	aws_secret_access_key=secret_key)
 
 def startec2():
-    ec2.start_instances(InstanceIds=instances)
+    ec2.stop_instances(InstanceIds=instances)
 
 startec2()
